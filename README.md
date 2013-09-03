@@ -26,6 +26,8 @@ Very efficient collection of ruby backtraces, even under heavy CPU load
 
 ### Notes
 
-Ruby 2.0 only, uses #backtrace_locations 
+This technique was conceived by https://github.com/tmm1 , big thank you. 
+
+Ruby 2.0 uses #backtrace_locations, 1.9.3 uses #backtrace
 
 (gem template based on https://github.com/CodeMonkeySteve/fast_xor )
