@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <sys/time.h>
 #include <ruby.h>
 #include <ruby/encoding.h>
 
