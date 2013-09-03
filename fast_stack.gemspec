@@ -1,13 +1,14 @@
 Gem::Specification.new do |s|
   s.name = 'fast_stack'
-  s.version = '0.0.1'
+  s.version = '0.0.3'
   s.date = '2013-09-02'
-  s.summary = 'Fast String blank? implementation'
-  s.description = 'Provides a C-optimized method for determining if a string is blank'
+  s.summary = 'Fast method for collecting stack traces in Ruby 2.0'
+  s.description = 'Fast method for collecting stack traces in Ruby 2.0'
+  s.license = 'MIT'
 
   s.authors = ['Sam Saffron']
   s.email = 'sam.saffron@gmail.com'
-  s.homepage = ''
+  s.homepage = 'https://github.com/SamSaffron/fast_stack'
 
   s.extensions = ['ext/fast_stack/extconf.rb']
   s.require_paths = ['lib']
