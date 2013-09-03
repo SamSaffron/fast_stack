@@ -10,7 +10,7 @@ profiler_start(VALUE module, VALUE usec)
     timer.it_interval.tv_sec = 0;
     timer.it_interval.tv_usec = (suseconds_t)NUM2LONG(usec);
     timer.it_value = timer.it_interval;
-    setitimer(ITIMER_PROF, &timer, 0);
+    setitimer(ITIMER_REAL, &timer, 0);
 
     return Qnil;
 }
