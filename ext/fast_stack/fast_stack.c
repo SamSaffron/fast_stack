@@ -8,7 +8,7 @@ profiler_start(VALUE module, VALUE usec)
 {
     struct itimerval timer;
     timer.it_interval.tv_sec = 0;
-    timer.it_interval.tv_usec = NUM2LONG(usec);
+    timer.it_interval.tv_usec = (suseconds_t)NUM2LONG(usec);
     timer.it_value = timer.it_interval;
     setitimer(ITIMER_PROF, &timer, 0);
 
