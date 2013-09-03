@@ -5,8 +5,9 @@ public/.DS_Store
 .rspec
 *.kdev4
 *.swp
+*.swo
 *.kate-swp
-lib/*.so
+lib/fast_stack/*.so
 tmp/*
 pkg
 vendor/bundle
