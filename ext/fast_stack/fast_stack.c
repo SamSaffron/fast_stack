@@ -20,7 +20,7 @@ profiler_stop(VALUE module)
 {
     struct itimerval timer;
     memset(&timer, 0, sizeof(timer));
-    setitimer(ITIMER_PROF, &timer, 0);
+    setitimer(ITIMER_REAL, &timer, 0);
 
     return Qnil;
 }

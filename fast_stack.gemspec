@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'fast_stack'
-  s.version = '0.0.4'
+  s.version = '0.0.5'
   s.date = '2013-09-03'
   s.summary = 'Fast method for collecting stack traces in Ruby 2.0'
   s.description = 'Fast method for collecting stack traces in Ruby 2.0'
