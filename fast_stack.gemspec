@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name = 'fast_stack'
-  s.version = '0.0.5'
-  s.date = '2013-09-03'
+  s.version = '0.0.6'
+  s.date = '2013-09-09'
   s.summary = 'Fast method for collecting stack traces in Ruby 2.1'
   s.description = 'Fast method for collecting stack traces in Ruby 2.1'
   s.license = 'MIT'
@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
     'README.md',
     'lib/fast_stack.rb',
     'ext/fast_stack/fast_stack.c',
-    'ext/fast_stack/extconf.rb',
+    'ext/fast_stack/extconf.rb'
   ]
   s.test_files = Dir['spec/**/*_spec.rb']
 
