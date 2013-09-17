@@ -18,15 +18,19 @@ Very efficient collection of ruby backtraces, even under heavy CPU load
   stacks = FastStack.profile do
     fib(30)
   end
-  
+
   puts stacks.count
-  # 30 
-  
+  # 30
+
 ```
+
+### Changelog
+
+0.1.0 - 17-Sep - Bugfix - deep callstacks could lead to an infinite loop
 
 ### Notes
 
-This technique was conceived by https://github.com/tmm1 , big thank you. 
+This technique was conceived by https://github.com/tmm1 , big thank you.
 
 Ruby 2.0 uses #backtrace_locations, 1.9.3 uses #backtrace
 
