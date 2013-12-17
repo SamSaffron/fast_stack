@@ -2,6 +2,18 @@ require 'fast_stack'
 
 
 describe String do
+
+  it "works for c mode" do
+    s = FastStack.profile(1, :c) do
+      t = Time.new
+      while (Time.new - t) < 0.01 do
+        "nothing"
+      end
+    end
+
+    expect(s.count).to be > 2
+  end
+
   it "works" do
     s = FastStack.profile do
       t = Time.new
