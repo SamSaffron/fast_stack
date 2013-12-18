@@ -13,11 +13,13 @@ int backtrace_fd;
 
 static void alrm_handler(int signum)
 {
-   static void *trace[1024];
-   int n = backtrace(trace, 1024);
+   static void *trace[2048];
+   int n = backtrace(trace, 2048);
 
-   backtrace_symbols_fd(trace, n, backtrace_fd);
-   write(backtrace_fd,"__END__\n",8);
+   if(n>2){
+       backtrace_symbols_fd(trace + sizeof(void*)*2 , n-2, backtrace_fd);
+       write(backtrace_fd, "__SEP__\n", 8);
+   }
 }
 
 static VALUE
@@ -41,6 +43,7 @@ rb_profile_start_native(VALUE module, VALUE usec, VALUE fd)
 
     return Qnil;
 }
+
 
 static VALUE
 rb_profile_stop_native(VALUE module)
@@ -77,7 +80,6 @@ rb_profile_stop(VALUE module)
 
     return Qnil;
 }
-
 
 void Init_fast_stack( void )
 {
