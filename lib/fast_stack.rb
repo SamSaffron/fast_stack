@@ -11,7 +11,7 @@ module FastStack
 
     new_api = thread.respond_to?(:backtrace_locations)
 
-    trap('ALRM') do
+    handler do
       FastStack.stop
       stack = (new_api ? thread.backtrace_locations : thread.backtrace)
       # I am not sure if this is ensured to run in the thread
@@ -35,6 +35,10 @@ module FastStack
 
 
   private
+
+  def self.handler(&block)
+    trap(signal, &block)
+  end
 
   def self.profile_native(millisecs)
     temp = Tempfile.new('stacks')
