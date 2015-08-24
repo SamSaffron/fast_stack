@@ -2,8 +2,6 @@ PATH
   remote: .
   specs:
     fast_stack (0.1.0)
-      rake
-      rake-compiler
 
 GEM
   remote: https://rubygems.org/
@@ -47,4 +45,6 @@ PLATFORMS
 DEPENDENCIES
   fast_stack!
   guard-rspec
+  rake
+  rake-compiler
   rspec
