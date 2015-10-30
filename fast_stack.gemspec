@@ -16,7 +16,10 @@ Gem::Specification.new do |s|
     'MIT-LICENSE',
     'README.md',
     'lib/fast_stack.rb',
+    'ext/fast_stack/fast_stack.h',
     'ext/fast_stack/fast_stack.c',
+    'ext/fast_stack/fast_stack_linux.c',
+    'ext/fast_stack/fast_stack_windows.c',
     'ext/fast_stack/extconf.rb'
   ]
   s.test_files = Dir['spec/**/*_spec.rb']
