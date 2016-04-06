@@ -1,7 +1,7 @@
 require 'fast_stack'
 
 
-describe String do
+RSpec.describe String do
 
   it "works for c mode" do
     s = FastStack.profile(1, :c) do
