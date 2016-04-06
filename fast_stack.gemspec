@@ -1,9 +1,8 @@
 Gem::Specification.new do |s|
   s.name = 'fast_stack'
-  s.version = '0.1.0'
-  s.date = '2013-09-17'
-  s.summary = 'Fast method for collecting stack traces in Ruby 2.1'
-  s.description = 'Fast method for collecting stack traces in Ruby 2.1'
+  s.version = '0.2.0'
+  s.summary = 'Fast method for collecting stack traces in Ruby 2.1+'
+  s.description = 'Fast method for collecting stack traces in Ruby 2.1+'
   s.license = 'MIT'
 
   s.authors = ['Sam Saffron']
