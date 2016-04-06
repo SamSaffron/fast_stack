@@ -1,4 +1,4 @@
-### Fast stack
+# Fast stack [![Build Status](https://travis-ci.org/SamSaffron/fast_stack.svg?branch=master)](https://travis-ci.org/SamSaffron/fast_stack)
 
 Very efficient collection of ruby backtraces, even under heavy CPU load
 
@@ -6,7 +6,7 @@ Very efficient collection of ruby backtraces, even under heavy CPU load
 
 ```ruby
 require 'fast_stack'
-111
+```
 
 ### Usage
 
