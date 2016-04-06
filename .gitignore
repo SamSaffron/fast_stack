@@ -11,3 +11,4 @@ lib/fast_stack/*.so
 tmp/*
 pkg
 vendor/bundle
+Gemfile.lock
